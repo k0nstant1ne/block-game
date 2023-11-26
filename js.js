@@ -8,9 +8,9 @@ const playButton = document.querySelector('.play-button');
 const playAgainButton = document.querySelector('.play-again');
 const gameover = document.createElement('div');
 const gameBox = document.querySelector('.game-box');
-const soundJump = new Audio('./audio/jump.mp3');
-const gameMusic = new Audio('./audio/game-music.mp3');
-const scoreMusic = new Audio('./audio/score.mp3');
+const soundJump = new Audio('./jump.mp3');
+const gameMusic = new Audio('./game-music.mp3');
+const scoreMusic = new Audio('./score.mp3');
 let maxSpeed = 1.8;
 
 
