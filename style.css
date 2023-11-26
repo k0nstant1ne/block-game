@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans', sans-serif;
+    background: black;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.game-box{
+    position: relative;
+    display: flex;
+    align-items: end;
+    width: 90vw;
+    height: 350px;
+    border: 2px solid white;
+}
+.dino {
+    position: absolute;
+    left: 10%;
+    width: 65px;
+    height: 65px;
+    background: grey;
+}
+.obstackle--move{
+    animation: obstackleMove 5.5s linear infinite;
+}
+.yellow-obstackle {
+    position: absolute;
+    background: yellow;
+}
+.counter{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    right: 15px;
+    top: 7px;
+}
+.play-button, .play-again {
+    position: absolute;
+    font-size: 60px;
+    right: 0;
+    left: 0%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+}
+.play-again {
+    display: none;
+    font-size: 1.8vw;
+    top: 57%;
+}
+.yellow-obstackle-animation {
+    animation: yellowObstackleAnimation 1s ease-out infinite;
+}
+
+@keyframes yellowObstackleAnimation {
+    0% {
+    } 
+    50% {
+        bottom: 50px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
